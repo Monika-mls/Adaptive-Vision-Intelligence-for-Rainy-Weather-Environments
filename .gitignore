@@ -1,0 +1,66 @@
+
+# Python environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+build/
+coverage/
+.vite/
+
+# Training datasets and raw images
+datasets/
+dataset/
+data/
+inputs/
+downloads/
+
+# Model weights and checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+# Generated training and inference results
+outputs/
+runs/
+wandb/
+lightning_logs/
+tensorboard/
+events.out.tfevents.*
+
+# External pretrained repositories
+external_models/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

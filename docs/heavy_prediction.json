@@ -1,0 +1,51 @@
+{
+  "timestamp_utc": "2026-10-26T19:37:54.496498+00:00",
+  "image": {
+    "path": "C:\\Users\\monik\\Downloads\\Adaptive Vision Intelligence\\datasets\\RealRain-1k-H\\validation\\input\\1007.png",
+    "original_size": {
+      "width": 1032,
+      "height": 1000
+    },
+    "preprocessed_shape": [
+      1,
+      3,
+      224,
+      224
+    ]
+  },
+  "model": {
+    "checkpoint_path": "C:\\Users\\monik\\Downloads\\Adaptive Vision Intelligence\\checkpoints\\severity\\best.pt",
+    "architecture": "mobilenet_v3_small",
+    "classes": [
+      "Light",
+      "Heavy"
+    ],
+    "preprocessing": "IMAGENET1K_V1",
+    "checkpoint_epoch": 8,
+    "checkpoint_best_macro_f1": 0.726100980817421,
+    "device": "cuda"
+  },
+  "prediction": {
+    "predicted_class": "Light",
+    "predicted_class_index": 0,
+    "confidence": 0.584755,
+    "probabilities": {
+      "Light": 0.584755,
+      "Heavy": 0.415245
+    },
+    "probability_margin": 0.169511,
+    "uncertain": true,
+    "uncertainty_reasons": [
+      "confidence_below_threshold",
+      "probability_margin_below_threshold"
+    ],
+    "decision_thresholds": {
+      "minimum_confidence": 0.75,
+      "minimum_probability_margin": 0.2,
+      "calibrated": false
+    },
+    "suggested_restoration_model": "PReNet",
+    "automatic_routing_allowed": false,
+    "restoration_executed": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dataset": "RealRain-1k",
+  "repository_revision": "f467de475261569f48f4355849011ef85ce57046",
+  "total_manifest_records": 2240,
+  "valid_filename_pairs": 2240,
+  "missing_partner_count": 0,
+  "missing_partners": [],
+  "unrecognized_png_paths": [],
+  "duplicate_entries": [],
+  "possible_cross_split_id_overlap": {},
+  "valid_pairs_by_severity_and_split": {
+    "Heavy/test": 224,
+    "Heavy/train": 784,
+    "Heavy/validation": 112,
+    "Light/test": 224,
+    "Light/train": 784,
+    "Light/validation": 112
+  },
+  "limitations": [
+    "Pairs validated using filenames only.",
+    "Image contents have not been inspected.",
+    "Image dimensions have not been verified.",
+    "Repeated image IDs do not prove scene duplication.",
+    "Medium severity labels are unavailable."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "dataset": "RealRain-1k",
+  "label_classes_available": [
+    "Light",
+    "Heavy"
+  ],
+  "medium_labels_available": false,
+  "total_original_labels": 2240,
+  "matched_light_heavy_scene_groups": 1120,
+  "incomplete_scene_groups": [],
+  "cross_split_image_ids": {},
+  "target_filename_mismatches": [],
+  "errors": [],
+  "counts": {
+    "test/Heavy": 224,
+    "test/Light": 224,
+    "train/Heavy": 784,
+    "train/Light": 784,
+    "validation/Heavy": 112,
+    "validation/Light": 112
+  },
+  "limitations": [
+    "Scene grouping assumes matching IDs identify corresponding scenes.",
+    "Scene content is not independently verified.",
+    "Clean target hashes are not verified for every scene.",
+    "Medium is not an original dataset label.",
+    "No synthetic images were generated.",
+    "No classifier was trained."
+  ]
+}

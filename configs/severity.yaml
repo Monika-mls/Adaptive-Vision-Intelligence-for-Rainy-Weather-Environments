@@ -1,0 +1,75 @@
+
+# Adaptive Vision Intelligence
+# Binary Rain Severity Classification Configuration
+
+project:
+  name: Adaptive Vision Intelligence
+  phase: 3
+
+severity:
+  classification_type: binary
+
+  num_classes: 2
+
+  classes:
+    - Light
+    - Heavy
+
+  class_to_index:
+    Light: 0
+    Heavy: 1
+
+  index_to_class:
+    0: Light
+    1: Heavy
+
+  model:
+    architecture: mobilenet_v3_small
+    pretrained: true
+    pretrained_source: imagenet
+    freeze_backbone_initially: true
+    output_neurons: 2
+    activation: softmax
+
+  input:
+    channels: 3
+    height: 224
+    width: 224
+    normalization: imagenet
+
+  training:
+    epochs: 20
+    batch_size: 4
+    learning_rate: 0.0001
+    optimizer: adam
+    loss_function: cross_entropy
+    seed: 42
+
+  evaluation:
+    metrics:
+      - accuracy
+      - precision
+      - recall
+      - f1_score
+      - confusion_matrix
+
+  confidence:
+    minimum_probability: 0.70
+    uncertain_prediction_policy: abstain
+
+dataset:
+  name: RealRain-1k
+  manifest: docs/severity_labels.csv
+
+  labels:
+    Light: RealRain-1k-L
+    Heavy: RealRain-1k-H
+
+  use_original_splits: true
+  prevent_scene_leakage: true
+  include_medium: false
+
+hardware:
+  device: auto
+  allow_cpu_fallback: true
+  gpu_memory_limit_gb: 2

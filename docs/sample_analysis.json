@@ -1,0 +1,60 @@
+{
+  "total_images": 4,
+  "dimensions": {
+    "1032x1000": 4
+  },
+  "color_modes": {
+    "RGB": 4
+  },
+  "images": [
+    {
+      "path": "datasets\\sample\\RealRain-1k-H\\validation\\input\\1007.png",
+      "width": 1032,
+      "height": 1000,
+      "mode": "RGB",
+      "format": "PNG",
+      "pixel_min": 34,
+      "pixel_max": 203,
+      "pixel_mean": 69.71734528423772,
+      "pixel_std": 22.393316995039825
+    },
+    {
+      "path": "datasets\\sample\\RealRain-1k-H\\validation\\target\\1007.png",
+      "width": 1032,
+      "height": 1000,
+      "mode": "RGB",
+      "format": "PNG",
+      "pixel_min": 30,
+      "pixel_max": 150,
+      "pixel_mean": 60.93636175710594,
+      "pixel_std": 19.206412763952375
+    },
+    {
+      "path": "datasets\\sample\\RealRain-1k-L\\validation\\input\\1007.png",
+      "width": 1032,
+      "height": 1000,
+      "mode": "RGB",
+      "format": "PNG",
+      "pixel_min": 33,
+      "pixel_max": 203,
+      "pixel_mean": 68.510459625323,
+      "pixel_std": 22.145437722340635
+    },
+    {
+      "path": "datasets\\sample\\RealRain-1k-L\\validation\\target\\1007.png",
+      "width": 1032,
+      "height": 1000,
+      "mode": "RGB",
+      "format": "PNG",
+      "pixel_min": 30,
+      "pixel_max": 150,
+      "pixel_mean": 60.93636175710594,
+      "pixel_std": 19.206412763952375
+    }
+  ],
+  "limitations": [
+    "Only locally downloaded images were inspected.",
+    "Dataset-wide dimension distribution is unknown.",
+    "Pixel statistics do not directly measure rain density."
+  ]
+}

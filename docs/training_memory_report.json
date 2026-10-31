@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-10-26T18:22:44.369814+00:00",
+  "gpu": "NVIDIA GeForce MX570 A",
+  "model": "MobileNetV3-Small",
+  "classes": [
+    "Light",
+    "Heavy"
+  ],
+  "pretrained_backbone": true,
+  "backbone_frozen": true,
+  "optimizer_steps_performed": 0,
+  "dataset_images_used": 0,
+  "results": [
+    {
+      "batch_size": 1,
+      "status": "passed",
+      "peak_allocated_mib": 26.0,
+      "peak_reserved_mib": 48.0
+    },
+    {
+      "batch_size": 2,
+      "status": "passed",
+      "peak_allocated_mib": 28.48,
+      "peak_reserved_mib": 48.0
+    },
+    {
+      "batch_size": 4,
+      "status": "passed",
+      "peak_allocated_mib": 33.11,
+      "peak_reserved_mib": 50.0
+    }
+  ],
+  "limitations": [
+    "Synthetic images only.",
+    "No optimizer step was executed.",
+    "Optimizer-state memory was not measured.",
+    "Actual training memory may differ."
+  ]
+}

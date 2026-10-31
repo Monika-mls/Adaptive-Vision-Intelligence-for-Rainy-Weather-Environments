@@ -1,0 +1,94 @@
+{
+  "project": "Adaptive Vision Intelligence",
+  "phase": "3 - Step 14",
+  "evaluated_at_utc": "2026-10-26T19:45:36.899342+00:00",
+  "dataset_split": "validation",
+  "test_split_accessed": false,
+  "model": {
+    "checkpoint_path": "C:\\Users\\monik\\Downloads\\Adaptive Vision Intelligence\\checkpoints\\severity\\best.pt",
+    "architecture": "mobilenet_v3_small",
+    "classes": [
+      "Light",
+      "Heavy"
+    ],
+    "preprocessing": "IMAGENET1K_V1",
+    "checkpoint_epoch": 8,
+    "checkpoint_best_macro_f1": 0.726100980817421,
+    "device": "cuda"
+  },
+  "thresholds": {
+    "confidence": 0.75,
+    "margin": 0.2,
+    "calibrated": false
+  },
+  "metrics": {
+    "total_images": 224,
+    "correct_predictions": 163,
+    "incorrect_predictions": 61,
+    "accuracy": 0.7276785714285714,
+    "macro_f1": 0.7261009882334075,
+    "class_order": [
+      "Light",
+      "Heavy"
+    ],
+    "confusion_matrix": [
+      [
+        90,
+        22
+      ],
+      [
+        39,
+        73
+      ]
+    ],
+    "per_class": {
+      "Light": {
+        "precision": 0.6976744186046512,
+        "recall": 0.8035714285714286,
+        "f1": 0.7468879668049793,
+        "support": 112
+      },
+      "Heavy": {
+        "precision": 0.7684210526315789,
+        "recall": 0.6517857142857143,
+        "f1": 0.7053140096618359,
+        "support": 112
+      }
+    },
+    "routing": {
+      "accepted": 103,
+      "blocked": 121,
+      "coverage": 0.45982142857142855,
+      "accepted_correct": 84,
+      "accepted_incorrect": 19,
+      "accepted_accuracy": 0.8155339805825242,
+      "blocked_correct": 79,
+      "blocked_incorrect": 42,
+      "heavy_to_light_total": 39,
+      "heavy_to_light_accepted": 13,
+      "heavy_to_light_blocked": 26,
+      "heavy_to_light_accepted_rate": 0.11607142857142858,
+      "accepted_confusion_matrix": [
+        [
+          49,
+          6
+        ],
+        [
+          13,
+          35
+        ]
+      ]
+    },
+    "confidence": {
+      "mean_correct": 0.7572163006134968,
+      "mean_incorrect": 0.6894437049180326
+    }
+  },
+  "restoration_models_executed": false,
+  "limitations": [
+    "Validation set only, not held-out test.",
+    "Confidence thresholds have not been calibrated.",
+    "Routing decisions do not execute restoration.",
+    "Validation performance does not establish out-of-distribution generalization."
+  ]
+}

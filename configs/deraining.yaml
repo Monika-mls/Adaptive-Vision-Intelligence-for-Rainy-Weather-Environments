@@ -1,0 +1,45 @@
+
+# Adaptive Deraining Configuration
+
+adaptive_restoration:
+  enabled: true
+
+  severity_classes:
+    - Light
+    - Heavy
+
+  model_routing:
+    Light:
+      model: PReNet
+      adapter: prenet_adapter
+      enabled: true
+
+    Heavy:
+      model: VDMamba
+      adapter: vdmamba_adapter
+      enabled: true
+
+  unsupported_severity_policy: error
+  unavailable_model_policy: error
+
+  lazy_loading: true
+  batch_size: 1
+
+  fallback:
+    enabled: false
+
+models:
+  prenet:
+    name: PReNet
+    status: pending_integration
+    checkpoint_verified: false
+
+  vdmamba:
+    name: VDMamba
+    status: awaiting_verified_implementation
+    checkpoint_verified: false
+
+future_extensions:
+  medium_rain:
+    enabled: false
+    candidate_model: FMRNet

@@ -1,0 +1,80 @@
+{
+  "dataset": "dronefreak/RealRain-1k",
+  "repository_revision": "f467de475261569f48f4355849011ef85ce57046",
+  "sample_pairs_checked": 2,
+  "results": [
+    {
+      "severity": "Light",
+      "split": "validation",
+      "image_id": "1007",
+      "rainy_path": "RealRain-1k-L/validation/input/1007.png",
+      "clean_path": "RealRain-1k-L/validation/target/1007.png",
+      "rainy_info": {
+        "width": 1032,
+        "height": 1000,
+        "format": "PNG",
+        "original_mode": "RGB",
+        "converted_mode": "RGB",
+        "pixel_min": 33,
+        "pixel_max": 203,
+        "pixel_mean": 68.510459625323,
+        "sha256": "c3b7800b57325cf7c89b96e71ed2986fc2ea163bd09c706665716104c2b76295"
+      },
+      "clean_info": {
+        "width": 1032,
+        "height": 1000,
+        "format": "PNG",
+        "original_mode": "RGB",
+        "converted_mode": "RGB",
+        "pixel_min": 30,
+        "pixel_max": 150,
+        "pixel_mean": 60.93636175710594,
+        "sha256": "da7a1fe8f67333916a1848a6deb57c0435a3239153e727a7904456e874c3cfac"
+      },
+      "dimensions_match": true,
+      "images_identical": false,
+      "mean_absolute_pixel_difference": 7.574097868217054,
+      "comparison_path": "docs\\sample_validation\\light_1007_comparison.png"
+    },
+    {
+      "severity": "Heavy",
+      "split": "validation",
+      "image_id": "1007",
+      "rainy_path": "RealRain-1k-H/validation/input/1007.png",
+      "clean_path": "RealRain-1k-H/validation/target/1007.png",
+      "rainy_info": {
+        "width": 1032,
+        "height": 1000,
+        "format": "PNG",
+        "original_mode": "RGB",
+        "converted_mode": "RGB",
+        "pixel_min": 34,
+        "pixel_max": 203,
+        "pixel_mean": 69.71734528423772,
+        "sha256": "f144dd7058d51d800f75360c1e80046b6857dbf8d5f9b93f66cbc1afb0aca87c"
+      },
+      "clean_info": {
+        "width": 1032,
+        "height": 1000,
+        "format": "PNG",
+        "original_mode": "RGB",
+        "converted_mode": "RGB",
+        "pixel_min": 30,
+        "pixel_max": 150,
+        "pixel_mean": 60.93636175710594,
+        "sha256": "da7a1fe8f67333916a1848a6deb57c0435a3239153e727a7904456e874c3cfac"
+      },
+      "dimensions_match": true,
+      "images_identical": false,
+      "mean_absolute_pixel_difference": 8.780983527131783,
+      "comparison_path": "docs\\sample_validation\\heavy_1007_comparison.png"
+    }
+  ],
+  "limitations": [
+    "Only two sample pairs were inspected.",
+    "Matching dimensions do not prove alignment.",
+    "Pixel differences do not prove rain removal.",
+    "Dataset-wide quality is not established.",
+    "Medium severity is not evaluated."
+  ]
+}

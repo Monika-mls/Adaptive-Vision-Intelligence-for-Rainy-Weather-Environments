@@ -1,0 +1,42 @@
+
+# Adaptive Vision Intelligence
+# Phase 2 preprocessing configuration
+
+project:
+  name: Adaptive Vision Intelligence
+  version: "0.1.0"
+
+image:
+  color_mode: RGB
+  preserve_original_resolution: true
+  pixel_dtype: uint8
+
+training:
+  crop_size: 256
+  horizontal_flip: true
+  vertical_flip: true
+  rotate_90: true
+  random_seed: 42
+  normalization: zero_one
+
+validation:
+  use_random_augmentation: false
+  preserve_original_resolution: true
+
+severity_inference:
+  architecture: mobilenet_v3_small
+  weights_profile: IMAGENET1K_V1
+  resize_shorter_edge: 256
+  center_crop_size: 224
+  normalization: imagenet
+
+restoration_inference:
+  profile: generic_baseline
+  preserve_original_resolution: true
+  normalization: zero_one
+  batch_size: 1
+
+model_specific_requirements:
+  prenet: pending_verification
+  fmrnet: pending_verification
+  vdmamba: pending_verification

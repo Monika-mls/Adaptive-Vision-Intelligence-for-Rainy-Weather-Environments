@@ -1,0 +1,22 @@
+{
+  "dataset": "dronefreak/RealRain-1k",
+  "repository_revision": "f467de475261569f48f4355849011ef85ce57046",
+  "verified_at_utc": "2026-10-26T17:55:49.845907+00:00",
+  "expected_files": 1792,
+  "verified_files": 1792,
+  "failed_files": 0,
+  "expected_bytes": 2487188557,
+  "verified_by": [
+    "exact remote file size",
+    "PNG decoding and integrity checks"
+  ],
+  "remote_sha256_verified": false,
+  "counts": {
+    "train/Light": 784,
+    "train/Heavy": 784,
+    "validation/Light": 112,
+    "validation/Heavy": 112
+  },
+  "failures": [],
+  "complete": true
+}
