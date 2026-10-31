@@ -81,11 +81,9 @@ Open **PowerShell** in a directory where you want the project.
 ### 1. Clone the project
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/Adaptive-Vision-Intelligence.git
+git clone https://github.com/Monika-mls/Adaptive-Vision-Intelligence-for-Rainy-Weather-Environments.git
 cd Adaptive-Vision-Intelligence
 ```
-
-Replace `YOUR_USERNAME` and the repository name with the actual GitHub URL. If you already cloned it, open that folder instead.
 
 ### 2. Create and activate a Python virtual environment
 
